@@ -21,10 +21,5 @@ To train reliably on **Google Colab & Kaggle Free Tiers (NVIDIA T4 / P100 ~15-16
 - **Zero Data Leakage**: Sensitive land records must **never** be sent to third-party APIs (e.g., OpenAI, Google Cloud). All AI training and inference occur locally or on controlled private infrastructure.
 - **Blockchain Integration**: Extracted structured records and raw document cryptographic hashes (SHA-256) are committed to a decentralized ledger to ensure immutability, tamper resistance, and public auditability without a single point of failure.
 
-## Repository Structure
-- `notebooks/`: Jupyter notebooks ready to run on Colab / Kaggle free GPUs (e.g. `01_qwen2_5_vl_3b_qlora_colab_kaggle.ipynb`).
-- `data/`:
-  - `raw/`: Scanned Marathi document samples (7-12 extracts).
-  - `processed/`: Processed image-text pairs and ground-truth JSON annotations.
-- `models/`: Saved LoRA adapter weights and export configurations.
-
+## DATA set used in First stage
+https://huggingface.co/datasets/Process-Venue/Marathi_Handwritten
